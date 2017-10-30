@@ -1,0 +1,138 @@
+body{
+    margin:0px;
+    padding:0px;
+/*    background: #405467;*/
+    background: #2f4050;
+    font-family: sans-serif, Tahoma, arial;
+}
+
+body.loaded{
+    background: #eee;
+    transition: 1s all ease;
+    transition-delay: 0.7s;
+}
+
+#wrapper {
+    width:100%;
+    height:100%;
+}
+
+#page{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+.logo-w{
+    background: #293846;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index: 1000;
+}
+
+.logo-w i{
+    width:150px;
+    height:150px;
+    font-size:150px;
+    color:#fff;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-left:-75px;
+    margin-top:-75px;
+    z-index: 1001;
+/*    opacity: 0.5;*/
+}
+
+.logo-w.loaded{
+    background: #00897b;
+    width:60px;
+    transition:1.2s all ease;
+}
+
+.logo-w.loaded i{
+    color:#fff;
+    width:40px;
+    height:40px;
+    font-size:40px;
+    left:10px;
+    margin-left: 0px;
+    transition:0.9s all ease;
+/*    opacity: 0;*/
+}
+
+.left-m{
+    width:240px;
+    height:100%;
+    background: #2f4050;
+/*    background: #1f3142;*/
+    position: fixed;
+    top:0px;
+    left:-300px;
+    opacity: 0;
+/*    box-shadow: 1px 0px 5px #ccc;*/
+/*    border-right:20px solid #00897b;*/
+}
+
+.left-m.loaded{
+    left:60px;
+/*    background: #546e7a;*/
+/*    background: #374046;*/
+    transition:0.8s all ease;
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+
+.left-m h3{
+    background: #293846;
+    color: #a7b1c2;
+    padding: 15px 15px;
+    margin:0px;
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.left-m-list{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+.left-m-list li{
+    padding:15px;
+    color:#a7b1c2;
+/*    opacity: 0.6;*/
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.left-m-list li i{
+    font-size:14px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.left-m-list li:hover{
+    background: #293846;
+    color:#fff;
+    opacity: 1;
+}
+
+.new-report-btn{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    background: #1f3142;
+    color:#fff;
+}
+
+.new-report-btn i{
+    vertical-align: middle;
+    font-size:30px;
+}

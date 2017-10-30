@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<configuration>
+	<system.webServer>
+		<handlers>
+		  <add name="FastReportHandler" path="FastReport.Export.axd" verb="*" type="FastReport.Web.Handlers.WebExport" resourceType="Unspecified" />
+		  <add name="ReportToolHandler" path="ReportTool.axd" verb="*" type="ReportTool.Handlers.ReportHandler" resourceType="Unspecified" />
+		  <add name="ResourceHandler" path="Resource.axd" verb="*" type="ReportTool.Handlers.ResourceHandler" resourceType="Unspecified" />
+		</handlers>
+	</system.webServer>
+</configuration>

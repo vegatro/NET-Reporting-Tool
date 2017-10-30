@@ -1,0 +1,21 @@
+{
+  "ReportPath": "C:\\ReportTool\\Reports\\",
+  "TracePath": "C:\\ReportTool\\Trace\\",
+  "ErrorPath": "C:\\ReportTool\\Error\\",
+  "TraceEnabled": true,
+  "ErrorEnabled": true,
+  "AdminSiteColor": "#7b1fa2",
+  "ClientSiteColor": "#7b1fa2",
+  "AdminPageTitle": "FReportTool Admin",
+  "ClientPageTitle": "FReportTool Client",
+  "UserApiUrl": "",
+  "SessionAdminKey": "Admin",
+  "SessionUserIdKey": "UserId",
+  "DBConnectionString": "Server=DESKTOP-6GRVG5N; Database=REPORT_TOOL;User Id=REPORT_TOOL;Password=REPORT_TOOL;",
+  "DBCommandTimeout": "30000",
+  "PdfNetworkPathEnabled": false,
+  "PdfPhysicalPath": "C:\\ReportTool\\Reports\\pdf\\",
+  "PdfNetworkPath": "\\\\DESKTOP-6GRVG5N\\pdf\\",
+  "PdfNetworkUsername": "",
+  "PdfNetworkPassword": ""
+}

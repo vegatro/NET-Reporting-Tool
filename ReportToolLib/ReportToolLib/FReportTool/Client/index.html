@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="/Resource.axd?t=client&f=/css/jquery.toast.css">
+        <link rel="stylesheet" href="/Resource.axd?t=client&f=/css/style2.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="header-w">
+                <header>
+                    <div class="logo-w">
+                        <i class="material-icons">show_chart</i>
+                        <div id="loader"></div>
+                    </div>
+                    <div class="left-m-btn back-btn" style="display:none;">
+                        <i class="material-icons">keyboard_arrow_left</i>
+                        <span>Raporlar</span>
+                    </div>
+                    <div class="left-m-btn refresh-reports-btn">
+                        <i class="material-icons">refresh</i>
+                        <span>Raporları Yenile</span>
+                    </div>
+                </header>
+            </div>
+            <div id="page">
+                <div class="left-m">
+                    <h3><i class="material-icons" style="font-size: 17px; vertical-align: top; margin-right: 5px;">equalizer</i> RAPORLAR</h3>
+                    <div class="left-m-list-w">
+                        <ul class="left-m-list"></ul>
+                    </div>
+                </div>
+                <div class="page-c">
+                    <div class="report-nf">
+                        Sistemde kayıtlı bir rapor bulunmamaktadır.
+                    </div>
+                    <div class="report-body-w">
+                        <header class="report-filter-list-w">
+                            <ul class="report-filter-list"></ul>
+                            <div style="height:auto; overflow:hidden; margin-top:0px;padding: 10px 20px;background: #fff;">
+                                <button class="preview-report-btn">Raporu Yenile</button>
+                            </div>
+                        </header>
+                        <div id="report-w"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/Resource.axd?t=client&f=/scripts/jquery-3.2.1.min.js"></script>
+        <!--<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>-->
+        <script src="/Resource.axd?t=client&f=/scripts/jquery.toast.js"></script>
+        <script src="/Resource.axd?t=client&f=/scripts/toast.js"></script>
+        <script src="/Resource.axd?t=client&f=/scripts/globalloading.js"></script>
+        <script src="/Resource.axd?t=client&f=/scripts/network.js"></script>
+        <script src="/Resource.axd?t=client&f=/scripts/main2.js"></script>
+    </body>
+</html>

@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="/Resource.axd?t=admin&f=/css/jquery.datetimepicker.min.css">
+        <link rel="stylesheet" href="/Resource.axd?t=admin&f=/css/jquery.toast.css">
+        <link rel="stylesheet" href="/Resource.axd?t=admin&f=/css/style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="header-w">
+                <header>
+                    <div class="logo-w">
+                        <i class="material-icons">show_chart</i>
+                        <div id="loader"></div>
+                    </div>
+                    <div class="left-m-btn new-report-btn">
+                        <i class="material-icons">add</i>
+                        <span>Yeni Rapor Oluştur</span>
+                    </div>
+                </header>
+            </div>
+            <div id="page">
+                <aside class="left-m">
+                    <h3><i class="material-icons" style="font-size: 17px; vertical-align: top; margin-right: 5px;">equalizer</i> RAPORLAR</h3>
+                    <div class="left-m-list-w">
+                        <ul class="left-m-list">
+                            <!--<li><i class="material-icons">content_copy</i> Rapor 1</li>
+                            <li><i class="material-icons">content_copy</i> Rapor 2</li>
+                            <li><i class="material-icons">content_copy</i> Rapor 3</li>-->
+                        </ul>
+                    </div>
+                </aside>
+                <div class="page-c">
+                    <div class="report-nf">
+                        Sistemde kayıtlı bir rapor bulunmamaktadır.<br /><strong>Yeni Rapor Oluştur</strong> butonunu kullanarak bir rapor oluşturun.
+                    </div>
+                    <div class="report-builder-w">
+                        <ul class="progressbar">
+                            <li class="active" data-step="1">Bağlantı Seçin</li>
+                            <li data-step="2">Filtre Oluşturun</li>
+                            <li data-step="3">Raporunuzu Tasarlayın</li>
+                            <li data-step="4">E-Posta Oluşturun</li>
+                            <li data-step="5">Kullanıcıları Seçin</li>
+                        </ul>
+                        <section class="report-builder-step" data-step="1">
+                            <input type="text" class="default-input" placeholder="Rapor ismi *" id="r-name-in" />
+                            <div class="choose-con-str-w" data-visible="false">
+                                <div class="choose-con-str-text">Bağlantı Seçin *</div>
+                                <i class="material-icons">keyboard_arrow_down</i>
+                                <ul class="choose-con-str-list"></ul>
+                            </div>
+                            <input type="text" class="default-input" placeholder="Bağlantı ismi *" id="r-con-name-in" />
+                            <select id="r-db-type-select" class="default-select" style="margin-bottom:20px; border:1px solid #eee;">
+                                <option value="none">Veritabanı Türünü Seçin *</option>
+                                <option value="MsSQL">MsSQL</option>
+                                <option value="MySQL">MySQL</option>
+                                <option value="MariaDB">Maria DB</option>
+                                <option value="Oracle">Oracle</option>
+                            </select>
+                            <textarea class="default-textarea" placeholder="Bağlantı (Connection String) *" id="r-con-str-in" style="height:150px;"></textarea>
+                            <textarea class="default-textarea" placeholder="Rapor SQL Sorgusu *" id="r-sql-q-in"></textarea>
+                        </section>
+                        <section class="report-builder-step" data-step="2">
+                            <ul class="report-filter-list">
+                                <!--<li>
+                                    <span>Name</span>
+                                    <select>
+                                        <option>eşittir</option>
+                                        <option>eşit değildir</option>
+                                        <option>büyüktür</option>
+                                        <option>küçüktür</option>
+                                        <option>büyük veya eşittir</option>
+                                        <option>küçük veya eşittir</option>
+                                    </select>
+                                    <input type="text" class="default-input" />
+                                </li>-->
+                            </ul>
+                        </section>
+                        <section class="report-builder-step" data-step="3" style="width:100%; max-width:100%;"></section>
+                        <section class="report-builder-step" data-step="4" style="padding:20px; box-sizing:border-box; background:#f9f9f9; max-width:400px;">
+                            <div>
+                                <input type="checkbox" id="send-email-cb" />
+                                <label for="send-email-cb">Bu raporu e-posta olarak gönder</label>
+                            </div>
+                            <div class="email-dep" style="margin-top:30px; display:none;">
+                                <select class="default-select" id="email-period">
+                                    <option value="none">Gönderim aralığı seçin *</option>
+                                    <option value="everyhour">Her saat</option>
+                                    <option value="everyday">Her gün</option>
+                                    <option value="everyweek">Her hafta</option>
+                                    <option value="everymonth">Her ay</option>
+                                    <option value="everyyear">Her yıl</option>
+                                </select>
+                            </div>
+                            <div class="email-dep" style="margin-top:30px; display:none;">
+                                <input type="text" class="default-input" id="email-start-date" placeholder="İlk Gönderim Zamanı *" readonly style="margin-bottom: 0px;margin-top: 20px;background: #fff;" />
+                            </div>
+                            <div class="email-dep" style="margin-top:30px; display:none;">
+                                <textarea id="email-to" class="default-textarea" placeholder="Alıcılar * (birden çok alıcı varsa noktalı virgül (;) ile ayırın)" style="background: #fff;height: 150px;"></textarea>
+                            </div>
+                            <div class="email-dep" style="margin-top:30px; display:none;">
+                                <textarea id="email-cc" class="default-textarea" placeholder="CC (birden çok alıcı varsa noktalı virgül (;) ile ayırın)" style="background: #fff;height: 150px;"></textarea>
+                            </div>
+                        </section>
+                        <section class="report-builder-step" data-step="5" style="padding: 20px; box-sizing: border-box; background: rgb(249, 249, 249); max-width: 400px; display: block;">
+                            <div>
+                                <input type="checkbox" id="report-public-cb" checked />
+                                <label for="report-public-cb">Bu raporu herkes görebilir</label>
+                            </div>
+                            <div id="user-list-w" style="display:none;">
+                                <h4 style="padding-top: 20px; border-top: 1px solid #ddd;">Bu raporu görüntelemeye yetkisi olan kullanıcıları seçin</h4>
+                                <ul class="user-list">
+                                    <!--<li>
+                                        <input type="checkbox" value="1" />
+                                        <span class="user-list-id">1</span>
+                                        <span> - </span>
+                                        <span class="user-list-uname">Okan Güner</span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="2" />
+                                        <span class="user-list-id">2</span>
+                                        <span> - </span>
+                                        <span class="user-list-uname">Leyla Güner</span>
+                                    </li>-->
+                                </ul>
+                            </div>
+                        </section>
+                        <div class="step-btn-w">
+                            <button class="step-btn" data-type="complete">Raporu Kaydet</button>
+                            <button class="step-btn" data-type="next">Sonraki Adım</button>
+                            <button class="step-btn" data-type="prev">Önceki Adım</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/Resource.axd?t=admin&f=/scripts/jquery-3.2.1.min.js"></script>
+        <!--<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>-->
+        <script src="/Resource.axd?t=admin&f=/scripts/jquery.datetimepicker.full.min.js"></script>
+        <script src="/Resource.axd?t=admin&f=/scripts/jquery.toast.js"></script>
+        <script src="/Resource.axd?t=admin&f=/scripts/toast.js"></script>
+        <script src="/Resource.axd?t=admin&f=/scripts/globalloading.js"></script>
+        <script src="/Resource.axd?t=admin&f=/scripts/network.js"></script>
+        <script src="/Resource.axd?t=admin&f=/scripts/main.js"></script>
+    </body>
+</html>

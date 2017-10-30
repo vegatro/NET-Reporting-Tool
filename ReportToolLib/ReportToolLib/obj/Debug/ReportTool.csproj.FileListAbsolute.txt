@@ -1,0 +1,13 @@
+c:\users\okngn\source\repos\ReportToolLib\ReportToolLib\bin\Debug\ReportTool.dll
+c:\users\okngn\source\repos\ReportToolLib\ReportToolLib\bin\Debug\ReportTool.pdb
+c:\users\okngn\source\repos\ReportToolLib\ReportToolLib\bin\Debug\FastReport.dll
+c:\users\okngn\source\repos\ReportToolLib\ReportToolLib\bin\Debug\FastReport.Web.dll
+c:\users\okngn\source\repos\ReportToolLib\ReportToolLib\obj\Debug\ReportTool.csproj.CoreCompileInputs.cache
+c:\users\okngn\source\repos\ReportToolLib\ReportToolLib\obj\Debug\ReportTool.dll
+c:\users\okngn\source\repos\ReportToolLib\ReportToolLib\obj\Debug\ReportTool.pdb
+C:\Users\okngn\source\repos\ReportToolLib\ReportToolLib\bin\Debug\Newtonsoft.Json.dll
+C:\Users\okngn\source\repos\ReportToolLib\ReportToolLib\bin\Debug\Newtonsoft.Json.xml
+C:\Users\okngn\source\repos\ReportToolLib\ReportToolLib\bin\Debug\ReportTool.dll.config
+C:\Users\okngn\source\repos\ReportToolLib\ReportToolLib\bin\Debug\MySql.Data.dll
+C:\Users\okngn\source\repos\ReportToolLib\ReportToolLib\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\okngn\source\repos\ReportToolLib\ReportToolLib\obj\Debug\ReportTool.csprojResolveAssemblyReference.cache

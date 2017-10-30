@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FReportTool</id>
+    <version>1.1.6</version>
+    <authors>Okan Guner</authors>
+    <owners>Okan Guner</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Fast Report helper tool.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>fast report</tags>
+    <dependencies>
+      <dependency id="MySql.Data" version="6.9.10" />
+	  <dependency id="Oracle.ManagedDataAccess" version="12.2.1100" />
+	  <dependency id="Newtonsoft.Json" version="10.0.3" />
+    </dependencies>
+  </metadata>
+  <files>
+	  <file src="ReportToolLib\bin\Debug\ReportTool.dll" target="lib" />
+	  <file src="ReportToolLib\bin\FastReport.dll" target="lib" />
+	  <file src="ReportToolLib\bin\FastReport.Web.dll" target="lib" />
+	  <file src="ReportToolLib\FReportTool\**\*.*" target="content\FReportTool" /> 
+	  <file src="web.config.transform" target="content\web.config.transform" />
+  </files>
+</package>
