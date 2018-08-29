@@ -11,3 +11,12 @@ C:\Users\okngn\source\repos\ReportToolLib\ReportToolLib\bin\Debug\ReportTool.dll
 C:\Users\okngn\source\repos\ReportToolLib\ReportToolLib\bin\Debug\MySql.Data.dll
 C:\Users\okngn\source\repos\ReportToolLib\ReportToolLib\bin\Debug\Oracle.ManagedDataAccess.dll
 C:\Users\okngn\source\repos\ReportToolLib\ReportToolLib\obj\Debug\ReportTool.csprojResolveAssemblyReference.cache
+C:\Users\okngn\OneDrive\Belgeler\GitHub\NET-Reporting-Tool\ReportToolLib\ReportToolLib\bin\Debug\ReportTool.dll.config
+C:\Users\okngn\OneDrive\Belgeler\GitHub\NET-Reporting-Tool\ReportToolLib\ReportToolLib\bin\Debug\ReportTool.dll
+C:\Users\okngn\OneDrive\Belgeler\GitHub\NET-Reporting-Tool\ReportToolLib\ReportToolLib\bin\Debug\ReportTool.pdb
+C:\Users\okngn\OneDrive\Belgeler\GitHub\NET-Reporting-Tool\ReportToolLib\ReportToolLib\bin\Debug\FastReport.dll
+C:\Users\okngn\OneDrive\Belgeler\GitHub\NET-Reporting-Tool\ReportToolLib\ReportToolLib\bin\Debug\FastReport.Web.dll
+C:\Users\okngn\OneDrive\Belgeler\GitHub\NET-Reporting-Tool\ReportToolLib\ReportToolLib\obj\Debug\ReportTool.csproj.CoreCompileInputs.cache
+C:\Users\okngn\OneDrive\Belgeler\GitHub\NET-Reporting-Tool\ReportToolLib\ReportToolLib\obj\Debug\ReportTool.csproj.CopyComplete
+C:\Users\okngn\OneDrive\Belgeler\GitHub\NET-Reporting-Tool\ReportToolLib\ReportToolLib\obj\Debug\ReportTool.dll
+C:\Users\okngn\OneDrive\Belgeler\GitHub\NET-Reporting-Tool\ReportToolLib\ReportToolLib\obj\Debug\ReportTool.pdb

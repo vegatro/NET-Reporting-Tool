@@ -14,14 +14,20 @@ using System.Web.SessionState;
 
 namespace ReportTool.Handlers
 {
-    public class ReportHandler : IHttpHandler, IReadOnlySessionState
+    public class ReportHandler : IHttpHandler, IReadOnlySessionState, IRequiresSessionState
     {
         public bool IsReusable { get; }
 
         public void ProcessRequest(HttpContext context)
         {
+            var configObj = Extend.GetConfig();
             string action = context.Request["action"];
             string reportID = context.Request.QueryString["reportID"];
+
+            if (configObj.WriteSession)
+            {
+                context.Session[configObj.SessionAdminKey] = 1;
+            }
 
             if (action == "preview")
             {

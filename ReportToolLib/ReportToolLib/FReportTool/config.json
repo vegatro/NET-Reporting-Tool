@@ -1,4 +1,5 @@
 {
+  "AppPrefix":  "",
   "ReportPath": "C:\\ReportTool\\Reports\\",
   "TracePath": "C:\\ReportTool\\Trace\\",
   "ErrorPath": "C:\\ReportTool\\Error\\",
@@ -9,6 +10,7 @@
   "AdminPageTitle": "FReportTool Admin",
   "ClientPageTitle": "FReportTool Client",
   "UserApiUrl": "",
+  "WriteSession":  false,
   "SessionAdminKey": "Admin",
   "SessionUserIdKey": "UserId",
   "DBConnectionString": "Server=DESKTOP-6GRVG5N; Database=REPORT_TOOL;User Id=REPORT_TOOL;Password=REPORT_TOOL;",

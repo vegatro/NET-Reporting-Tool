@@ -13,12 +13,13 @@ namespace ReportTool.Handlers
 
         public void ProcessRequest(HttpContext context)
         {
+            var config = Extend.GetConfig();
             string file = context.Request.QueryString["f"];
             string extension = file.Substring(file.LastIndexOf("."));
             string type = context.Request.QueryString["t"];
             
             context.Response.ContentType = GetMimeType(extension);
-            context.Response.WriteFile(context.Server.MapPath("~/FReportTool/" + type + "/" + file));
+            context.Response.WriteFile(context.Server.MapPath("~/" + config.AppPrefix + "/FReportTool/" + type + "/" + file));
         }
 
         private static IDictionary<string, string> _mappings = new Dictionary<string, string>(StringComparer.InvariantCultureIgnoreCase) {
